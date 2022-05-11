@@ -1,6 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+html {
+  min-height: 100vh;
+  display: grid;
+}
+
 body {
+  min-height: 100vh;
+  display: grid;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #ffc629;
 }
 
@@ -75,32 +105,59 @@ a:hover {
 .list-inline {
   position: absolute;
   list-style: none;
-  top: -1%;
-  left: -8%;
-  font-size: 20px;
+  top: -3%;
+  left: -9%;
+  font-size: 25px;
   color: rgb(230, 230, 230);
 }
 
-#heart-pic {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 80%;
-  right: 5%;
+.tag-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart {
+  display: flex;
+  top: 75%;
+  right: 1%;
 }
 
 .tag-inline {
-  margin-left: -25px;
+  margin-left: -14%;
 }
 
 .tag{
   background-color: #f6ecc0;
+  display: flex;
   border-radius: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+  justify-content: space-evenly;
   text-align: center;
-  vertical-align: middle;
-  padding: 10px;
+  padding: 0px 10px 0px;
   font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
+}
+
+#heart {
+  fill: #f8c437;
+}
+
+#heart:hover {
+  fill: #f58d9c;
+}
+
+.heart {
+  position: absolute;
+}
+
+.app-footer {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#person-icon, #chat-icon, #bumble-icon {
+  fill: #504e4e;
+}
+
+#person-icon:hover, #chat-icon:hover, #bumble-icon:hover {
+  fill: #171717;
 }
